@@ -4,30 +4,30 @@ Simply monitor your Cron
 
 [![Pipeline-CI](https://github.com/yoanbernabeu/cronify/actions/workflows/ci.yml/badge.svg)](https://github.com/yoanbernabeu/cronify/actions/workflows/ci.yml) [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](LICENSE)
 
-
 ![Logo](public/img/logo_ban.png)
 
 ---
 
-##  1. <a name='TableofContents'></a>Table of Contents
+## 1. <a name='TableofContents'></a>Table of Contents
 
 <!-- vscode-markdown-toc -->
-* 1. [Table of Contents](#TableofContents)
-* 2. [What is cronify ?](#Whatiscronify)
-* 3. [How to install the app ?](#Howtoinstalltheapp)
-	* 3.1. [Prerequisites](#Prerequisites)
-	* 3.2. [Clone and install](#Cloneandinstall)
-	* 3.3. [Create a new User](#CreateanewUser)
-* 4. [How to use ?](#Howtouse)
-	* 4.1. [Create a new App](#CreateanewApp)
-	* 4.2. [Create a new Job](#CreateanewJob)
-	* 4.3. [Get Cron Code snippet](#GetCronCodesnippet)
-* 5. [How to quickly test Cronify?](#HowtoquicklytestCronify)
-	* 5.1. [ Create a docker-compose.yml](#Createadocker-compose.yml)
-	* 5.2. [Start containers](#Startcontainers)
-	* 5.3. [Launch your browser and have fun !](#Launchyourbrowserandhavefun)
-* 6. [ Build your own Docker image](#BuildyourownDockerimage)
-* 7. [License](#License)
+
+- 1. [Table of Contents](#TableofContents)
+- 2. [What is cronify ?](#Whatiscronify)
+- 3. [How to install the app ?](#Howtoinstalltheapp)
+  - 3.1. [Prerequisites](#Prerequisites)
+  - 3.2. [Clone and install](#Cloneandinstall)
+  - 3.3. [Create a new User](#CreateanewUser)
+- 4. [How to use ?](#Howtouse)
+  - 4.1. [Create a new App](#CreateanewApp)
+  - 4.2. [Create a new Job](#CreateanewJob)
+  - 4.3. [Get Cron Code snippet](#GetCronCodesnippet)
+- 5. [How to quickly test Cronify?](#HowtoquicklytestCronify)
+  - 5.1. [ Create a docker-compose.yml](#Createadocker-compose.yml)
+  - 5.2. [Start containers](#Startcontainers)
+  - 5.3. [Launch your browser and have fun !](#Launchyourbrowserandhavefun)
+- 6. [ Build your own Docker image](#BuildyourownDockerimage)
+- 7. [License](#License)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -37,25 +37,26 @@ Simply monitor your Cron
 
 ---
 
-##  2. <a name='Whatiscronify'></a>What is cronify ?
+## 2. <a name='Whatiscronify'></a>What is cronify ?
 
 Cronify is a simple tool to monitor the execution of your cron jobs.
 
 The use is super simple:
+
 1. Declare one or more applications
 2. Declare one or more jobs for your applications
 3. For each job, you only have to touch three addresses to log the execution:
-    - An address to start a cron
-    - An address to stop a cron
-    - An address to indicate an error
+   - An address to start a cron
+   - An address to stop a cron
+   - An address to indicate an error
 
-##  3. <a name='Howtoinstalltheapp'></a>How to install the app ?
+## 3. <a name='Howtoinstalltheapp'></a>How to install the app ?
 
 Cronify is a simple Symfony/PHP/PostgreSQL application.
 
 This documentation offers a simplified installation FOR DEVELOPMENT ONLY with Docker. You can do without it if you already have PostgreSQL.
 
-###  3.1. <a name='Prerequisites'></a>Prerequisites
+### 3.1. <a name='Prerequisites'></a>Prerequisites
 
 - [PHP 8.1](https://www.php.net/downloads.php)
 - [Composer](https://getcomposer.org/)
@@ -63,7 +64,7 @@ This documentation offers a simplified installation FOR DEVELOPMENT ONLY with Do
 - [Make](https://www.gnu.org/software/make/)
 - [Symfony CLI](https://symfony.com/download)
 
-###  3.2. <a name='Cloneandinstall'></a>Clone and install
+### 3.2. <a name='Cloneandinstall'></a>Clone and install
 
 ```bash
 git clone https://github.com/yoanbernabeu/Cronify.git
@@ -71,7 +72,7 @@ cd Cronify
 make install
 ```
 
-###  3.3. <a name='CreateanewUser'></a>Create a new User
+### 3.3. <a name='CreateanewUser'></a>Create a new User
 
 User creation is possible from the command line.
 
@@ -79,30 +80,47 @@ User creation is possible from the command line.
 symfony console app:create-user username@mail.com password
 ```
 
-##  4. <a name='Howtouse'></a>How to use ?
+## 3.4 si on a une erreur de version de php
+
+- Il faut installer la version de php-8.0 ou superieur
+
+## 3.5 if you had thir Error: PHP Fatal error: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.26. in /root/.composer/vendor/composer/platform_check.php on line 24
+
+```
+ symfony local:php:list
+
+```
+
+voir dans le tableau quel version de php est selectionné
+si c 'est pas la bonne version php 8. alors creer un ficher dans la racine de projet .php-version et dedans ecrire just le numero de version ex: 8.0.1
+ou un fichier nommé .platform.app.yaml est dedans on met la version de php
+
+-
+
+## 4. <a name='Howtouse'></a>How to use ?
 
 Only THREE steps to get your cron job monitoring addresses !
 
-###  4.1. <a name='CreateanewApp'></a>Create a new App
+### 4.1. <a name='CreateanewApp'></a>Create a new App
 
 ![Create App](.doc/create_app.gif)
 
-###  4.2. <a name='CreateanewJob'></a>Create a new Job
+### 4.2. <a name='CreateanewJob'></a>Create a new Job
 
 ![Create Job](.doc/create_job.gif)
 
-###  4.3. <a name='GetCronCodesnippet'></a>Get Cron Code snippet
+### 4.3. <a name='GetCronCodesnippet'></a>Get Cron Code snippet
 
 ![Get Cron Code snippet](.doc/get_cron_code_snippet.gif)
 
-##  5. <a name='HowtoquicklytestCronify'></a>How to quickly test Cronify?
+## 5. <a name='HowtoquicklytestCronify'></a>How to quickly test Cronify?
 
 We offer you a quick method to test the application with the use of a preconfigured Docker container.
 
-###  5.1. <a name='Createadocker-compose.yml'></a> Create a docker-compose.yml
+### 5.1. <a name='Createadocker-compose.yml'></a> Create a docker-compose.yml
 
 ```yaml
-version: '3'
+version: "3"
 
 services:
   database:
@@ -125,29 +143,29 @@ volumes:
   db-data:
 ```
 
-###  5.2. <a name='Startcontainers'></a>Start containers
+### 5.2. <a name='Startcontainers'></a>Start containers
 
 ```bash
 docker-compose up -d
 ```
 
-###  5.3. <a name='Launchyourbrowserandhavefun'></a>Launch your browser and have fun !
+### 5.3. <a name='Launchyourbrowserandhavefun'></a>Launch your browser and have fun !
 
 - Go to http://localhost:8080
 - Login with :
-	- username: demo@demo.com
-	- password: password
+  - username: demo@demo.com
+  - password: password
 
-##  6. <a name='BuildyourownDockerimage'></a> Build your own Docker image
+## 6. <a name='BuildyourownDockerimage'></a> Build your own Docker image
 
 If you want to build your own Docker image, we provide a make command that you **need to adapt to your context**.
 
-*Do not run the command without modifications, you would not have the rights to upload the image to the Docker Hub.*
+_Do not run the command without modifications, you would not have the rights to upload the image to the Docker Hub._
 
 ```bash
 make docker-build-and-push
 ```
 
-##  7. <a name='License'></a>License
+## 7. <a name='License'></a>License
 
 See the bundled [LICENSE](LICENCE) file.

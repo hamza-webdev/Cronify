@@ -1,0 +1,463 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# Ceci est un logiciel libre ; voir le source pour les conditions de copie.
+# Il n'y a PAS de garantie ; tant pour une utilisation COMMERCIALE que pour
+# R�PONDRE � UN BESOIN PARTICULIER.
+
+# Ce logiciel est construit pour i386-pc-mingw32
+ 
+
+# Base de donn�es de Make, imprim�e le Fri May 13 15:33:48 2022
+
+# Variables
+
+# automatique
+<D = $(patsubst %/,%,$(dir $<))
+# automatique
+?F = $(notdir $?)
+# environnement
+PROVIDE_FULLSTACK_ACTION = true
+# makefile
+MAKEFLAGS = Rrqp
+# environnement
+VSCODE_LOG_NATIVE = false
+# automatique
+?D = $(patsubst %/,%,$(dir $?))
+# automatique
+@D = $(patsubst %/,%,$(dir $@))
+# environnement
+HOMEDRIVE = C:
+# automatique
+@F = $(notdir $@)
+# automatique
+^D = $(patsubst %/,%,$(dir $^))
+# makefile
+CURDIR := c:/Users/AY023176/dev/Cronify
+# d�faut
+SHELL := sh.exe
+# environnement
+WINDIR = C:\WINDOWS
+# environnement
+VSCODE_NLS_CONFIG = {"locale":"fr","availableLanguages":{"*":"fr"},"_languagePackId":"50ccac6e9bb708a41bfd03dcbba396d8.fr","_translationsConfigFile":"C:\\Users\\AY023176\\AppData\\Roaming\\Code\\clp\\50ccac6e9bb708a41bfd03dcbba396d8.fr\\tcf.json","_cacheRoot":"C:\\Users\\AY023176\\AppData\\Roaming\\Code\\clp\\50ccac6e9bb708a41bfd03dcbba396d8.fr","_resolvedLanguagePackCoreLocation":"C:\\Users\\AY023176\\AppData\\Roaming\\Code\\clp\\50ccac6e9bb708a41bfd03dcbba396d8.fr\\da15b6fd3ef856477bf6f4fb29ba1b7af717770d","_corruptedFile":"C:\\Users\\AY023176\\AppData\\Roaming\\Code\\clp\\50ccac6e9bb708a41bfd03dcbba396d8.fr\\corrupted.info","_languagePackSupport":true}
+# environnement
+VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
+# environnement
+ONEDRIVE = C:\Users\AY023176\OneDrive
+# environnement
+MAVEN_HOME = C:\apache-maven-3.8.5-bin
+# environnement
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY 
+;.PYW
+# makefile (de � makefile �, ligne 1)
+MAKEFILE_LIST :=  makefile
+# environnement
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# environnement
+TMP = C:\Users\AY023176\AppData\Local\Temp
+# environnement
+VSCODE_VERBOSE_LOGGING = true
+# environnement
+PHP_VERSION = 8.1
+# environnement
+PROGRAMW6432 = C:\Program Files
+# environnement
+PROGRAMDATA = C:\ProgramData
+# environnement
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-bae38b94-0c03-4dc1-9c78-05e34237ddf8-sock
+# environnement
+VSCODE_CWD = C:\Users\AY023176\AppData\Local\Programs\Microsoft VS Code
+# environnement
+PATH = C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python310\Scripts\;C:\Python310\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\SafeNet\Authentication\SAC\x64;C:\Program Files\SafeNet\Authentication\SAC\x32;C:\Program Files (x86)\Google\Google Apps Sync\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;c:\wamp64;C:\php-8.1\;C:\wamp64\bin\php\php7.4.26;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs\;C:\sqlite;C:\drupalconsole;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files (x86)\DevDesktop\tools;C:\Program Files (x86)\DevDesktop\drush_10;C:\HashiCorp\Vagrant\bin;C:\apache-maven-3.8.5-bin\bin;C:\Users\AY023176\scoop\shims;C:\Users\AY023176\AppData\Local\Microsoft\WindowsApps;C:\Users\AY023176\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\AY023176\AppData\Roaming\Composer\vendor\bin;C:\Users\AY023176\AppData\Roaming\npm;C:\Program Files\JetBrains\PhpStorm 2021.3.2\bin
+# environnement
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# environnement
+GOLANG_EXECUTABLE = go
+# environnement
+CHOCOLATEYLASTPATHUPDATE = 132883725767866580
+# environnement
+PROCESSOR_ARCHITECTURE = x86
+# environnement
+THREE_SCALE_USER_TOKEN = 207c527cfc2a6b8dcf4fa43ad7a976da
+# environnement
+USERPROFILE = C:\Users\AY023176
+# environnement
+CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
+# environnement
+ALLUSERSPROFILE = C:\ProgramData
+# environnement
+VSCODE_LOG_STACK = false
+# environnement
+NUMBER_OF_PROCESSORS = 8
+# environnement
+ELECTRON_RUN_AS_NODE = 1
+# d�faut
+.FEATURES := target-specific order-only second-expansion else-if archives
+# environnement
+UUID = aa171678-efd0-421b-8bae-1b14babe91cd
+# environnement
+PHPSTORM = C:\Program Files\JetBrains\PhpStorm 2021.3.2\bin;
+# automatique
+%F = $(notdir $%)
+# environnement
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_4592_XUXZTXXZOQOUWBZA
+# environnement
+VSCODE_PIPE_LOGGING = true
+# environnement
+COMPUTERNAME = A07663
+# environnement
+PROGRAMFILES = C:\Program Files (x86)
+# environnement
+USERDNSDOMAIN = AUSYNET.FR
+# environnement
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environnement
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environnement
+USERNAME = AY023176
+# environnement
+PUBLIC = C:\Users\Public
+# environnement
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environnement
+VSCODE_CODE_CACHE_PATH = C:\Users\AY023176\AppData\Roaming\Code\CachedData\da15b6fd3ef856477bf6f4fb29ba1b7af717770d
+# environnement
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environnement
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# environnement
+LOGONSERVER = \\ASYLYOWDC002
+# environnement
+TELEMETRY_ID = db2eda4b-c4db-470f-aa3a-822cb871a032
+# environnement
+M2_HOME = C:\apache-maven-3.8.5-bin
+# environnement
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environnement
+USERDOMAIN = AUSYNET
+# d�faut
+MAKE = $(MAKE_COMMAND)
+# d�faut
+MAKECMDGOALS := all
+# environnement
+JAVA_HOME = C:\Program Files\Java\jdk-18.0.1.1
+# d�faut
+MAKE_VERSION := 3.81
+# makefile
+.DEFAULT_GOAL := install
+# environnement
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# automatique
+%D = $(patsubst %/,%,$(dir $%))
+# environnement
+LOCALAPPDATA = C:\Users\AY023176\AppData\Local
+# environnement
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# d�faut
+MAKE_COMMAND := make.exe
+# environnement
+UTM_SOURCE = vscode
+# environnement
+PROCESSOR_ARCHITEW6432 = AMD64
+# d�faut
+.VARIABLES := 
+# automatique
+*F = $(notdir $*)
+# environnement
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
+# environnement
+OS = Windows_NT
+# environnement
+VSCODE_IPC_HOOK = \\.\pipe\d8895a92ce974c640ed017e8f13c1274-1.67.1-main-sock
+# environnement
+HOMEPATH = \Users\AY023176
+# environnement
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environnement
+PROMPT = $P$G
+# environnement
+MFLAGS = -Rrqp
+# automatique
+*D = $(patsubst %/,%,$(dir $*))
+# environnement
+SYSTEMROOT = C:\WINDOWS
+# automatique
++D = $(patsubst %/,%,$(dir $+))
+# environnement
+RECOMMENDER_API_URL = https://gw.api.openshift.io//api/v2
+# automatique
++F = $(notdir $+)
+# environnement
+APPDATA = C:\Users\AY023176\AppData\Roaming
+# environnement
+TEMP = C:\Users\AY023176\AppData\Local\Temp
+# environnement
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# d�faut
+MAKEFILES := 
+# automatique
+<F = $(notdir $<)
+# environnement
+LC_ALL = C
+# environnement
+UATDATA = C:\WINDOWS\CCM\UATData\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77
+# automatique
+^F = $(notdir $^)
+# d�faut
+SUFFIXES := 
+# environnement
+SYSTEMDRIVE = C:
+# environnement
+SESSIONNAME = Console
+# environnement
+PROCESSOR_REVISION = 8c01
+# environnement
+MAKELEVEL := 0
+# environnement
+LANG = C
+# environnement
+PROCESSOR_LEVEL = 6
+# environnement
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environnement
+VSCODE_PID = 4592
+# environnement
+USERDOMAIN_ROAMINGPROFILE = AUSYNET
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=105/1024=10%, Refait le hachage=0, Collisions=10/135=7%
+
+# Valeurs de variable avec mod�le sp�cifique
+
+# pas de valeurs de variable avec mod�le sp�cifique
+
+# R�pertoires
+
+# C:\wamp64\bin\php\php7.4.26 (p�riph�rique C:/wamp64/bin/php/php7.4.26, mtime 1643904110): 44 fichiers, non impossibilit�s.
+# C:\Program Files\Common Files\Oracle\Java\javapath (p�riph�rique C:/Program Files/Common Files/Oracle/Java/javapath, mtime 1652214727): 6 fichiers, non impossibilit�s.
+# C:\Program Files\Docker\Docker\resources\bin (p�riph�rique C:/Program Files/Docker/Docker/resources/bin, mtime 1646046934): 13 fichiers, non impossibilit�s.
+# C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (p�riph�rique C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1633527429): 30 fichiers, non impossibilit�s.
+# /bin : statut indisponible.
+# C:\WINDOWS\System32\Wbem (p�riph�rique C:/WINDOWS/System32/Wbem, mtime 1645562839): 171 fichiers, non impossibilit�s.
+# . (p�riph�rique c:/Users/AY023176/dev/Cronify, mtime 1652448766): 36 fichiers, non impossibilit�s.
+# C:\Users\AY023176\AppData\Local\Programs\Microsoft VS Code\bin (p�riph�rique C:/Users/AY023176/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1652203276): 4 fichiers, non impossibilit�s.
+# C:\sqlite (p�riph�rique C:/sqlite, mtime 1645272494): 10 fichiers, non impossibilit�s.
+# C:\Users\AY023176\AppData\Roaming\npm (p�riph�rique C:/Users/AY023176/AppData/Roaming/npm, mtime 1648563146): 18 fichiers, non impossibilit�s.
+# C:\ProgramData\chocolatey\bin (p�riph�rique C:/ProgramData/chocolatey/bin, mtime 1643902577): 13 fichiers, non impossibilit�s.
+# C:\Program Files\nodejs\ (p�riph�rique C:/Program Files/nodejs/, mtime 1645269789): 13 fichiers, non impossibilit�s.
+# C:\Python310\ (p�riph�rique C:/Python310/, mtime 1647859537): 18 fichiers, non impossibilit�s.
+# C:\Python310\Scripts\ (p�riph�rique C:/Python310/Scripts/, mtime 1647859537): 5 fichiers, non impossibilit�s.
+# C:\Users\AY023176\AppData\Roaming\Composer\vendor\bin (p�riph�rique C:/Users/AY023176/AppData/Roaming/Composer/vendor/bin, mtime 1645274084): 18 fichiers, non impossibilit�s.
+# C:\Users\AY023176\scoop\shims (p�riph�rique C:/Users/AY023176/scoop/shims, mtime 1652431810): 7 fichiers, non impossibilit�s.
+# C:\WINDOWS\System32\OpenSSH\ : statut indisponible.
+# C:\ProgramData\ComposerSetup\bin (p�riph�rique C:/ProgramData/ComposerSetup/bin, mtime 1645269720): 5 fichiers, non impossibilit�s.
+# C:\Program Files (x86)\Common Files\Oracle\Java\javapath (p�riph�rique C:/Program Files (x86)/Common Files/Oracle/Java/javapath, mtime 1652205897): 5 fichiers, non impossibilit�s.
+# C:\php-8.1\ (p�riph�rique C:/php-8.1/, mtime 1652434725): 38 fichiers, non impossibilit�s.
+# C:\Users\AY023176\AppData\Local\Microsoft\WindowsApps (p�riph�rique C:/Users/AY023176/AppData/Local/Microsoft/WindowsApps, mtime 1649678206): 10 fichiers, non impossibilit�s.
+# C:\WINDOWS (p�riph�rique C:/WINDOWS, mtime 1650016532): 134 fichiers, non impossibilit�s.
+# C:\Program Files\SafeNet\Authentication\SAC\x64 (p�riph�rique C:/Program Files/SafeNet/Authentication/SAC/x64, mtime 1640275075): 30 fichiers, non impossibilit�s.
+# C:\apache-maven-3.8.5-bin\bin (p�riph�rique C:/apache-maven-3.8.5-bin/bin, mtime 1652213486): 8 fichiers, non impossibilit�s.
+# C:\drupalconsole (p�riph�rique C:/drupalconsole, mtime 1645273794): 7 fichiers, non impossibilit�s.
+# C:\Program Files (x86)\DevDesktop\drush_10 (p�riph�rique C:/Program Files (x86)/DevDesktop/drush_10, mtime 1647689015): 10 fichiers, non impossibilit�s.
+# C:\Program Files\SafeNet\Authentication\SAC\x32 (p�riph�rique C:/Program Files/SafeNet/Authentication/SAC/x32, mtime 1640275075): 25 fichiers, non impossibilit�s.
+# C:\ProgramData\DockerDesktop\version-bin : statut indisponible.
+# C:\Program Files\Git\cmd (p�riph�rique C:/Program Files/Git/cmd, mtime 1643902708): 8 fichiers, non impossibilit�s.
+# C:\WINDOWS\system32 (p�riph�rique C:/WINDOWS/system32, mtime 1652383744): 2898 fichiers, non impossibilit�s.
+# C:\Program Files (x86)\Google\Google Apps Sync\ (p�riph�rique C:/Program Files (x86)/Google/Google Apps Sync/, mtime 1640275279): 7 fichiers, non impossibilit�s.
+# C:\Program Files (x86)\DevDesktop\tools (p�riph�rique C:/Program Files (x86)/DevDesktop/tools, mtime 1647689018): 14 fichiers, non impossibilit�s.
+# C:\Program Files (x86)\VMware\VMware Player\bin\ (p�riph�rique C:/Program Files (x86)/VMware/VMware Player/bin/, mtime 1652383709): 4 fichiers, non impossibilit�s.
+# C:\Program Files\JetBrains\PhpStorm 2021.3.2\bin (p�riph�rique C:/Program Files/JetBrains/PhpStorm 2021.3.2/bin, mtime 1646133143): 29 fichiers, non impossibilit�s.
+# c:\wamp64 (p�riph�rique c:/wamp64, mtime 1643903978): 27 fichiers, non impossibilit�s.
+# C:\HashiCorp\Vagrant\bin (p�riph�rique C:/HashiCorp/Vagrant/bin, mtime 1647774253): 3 fichiers, non impossibilit�s.
+# C:\Program Files (x86)\GnuWin32\bin (p�riph�rique C:/Program Files (x86)/GnuWin32/bin, mtime 1646047502): 5 fichiers, non impossibilit�s.
+
+# 3673 fichiers, non impossibilit�s dans 37 r�pertoires.
+
+# R�gles Implicites
+
+# Pas de r�gles implicites.
+
+# Fichiers
+
+stop:
+#  Cible factice (d�pendance de .PHONY).
+#  Recherche de r�gle implicite n'a pas �t� effectu�e.
+# Fichier inexistant.
+#  Fichier n'a pas �t� mis � jour.
+# makefile (de � makefile �, ligne 27)
+# APP_ENV = dev
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=1/32=3%, Refait le hachage=0, Collisions=0/1=0%
+#  commandes � ex�cuter (de � makefile �, ligne 29):
+	docker-compose stop
+	symfony server:stop
+	
+
+# Pas une cible :
+all:
+#  Cible provenant de la ligne de commande.
+#  Recherche de r�gle implicite effectu�e.
+# Fichier inexistant.
+#  Fichier n'a pas �t� mis � jour.
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
+
+docker-build-and-push:
+#  Cible factice (d�pendance de .PHONY).
+#  Recherche de r�gle implicite n'a pas �t� effectu�e.
+# Fichier inexistant.
+#  Fichier n'a pas �t� mis � jour.
+#  commandes � ex�cuter (de � makefile �, ligne 59):
+	docker build . -f ./docker/Dockerfile -t yoanbernabeu/cronify
+	docker push yoanbernabeu/cronify
+	
+
+.PHONY: install start fixtures stop tests coverage reset reset-test docker-build-and-push
+#  Recherche de r�gle implicite n'a pas �t� effectu�e.
+#  Heure de modification jamais v�rifi�e.
+#  Fichier n'a pas �t� mis � jour.
+
+# Pas une cible :
+.DEFAULT:
+#  Recherche de r�gle implicite n'a pas �t� effectu�e.
+#  Heure de modification jamais v�rifi�e.
+#  Fich 
+make.exe: *** Pas de r�gle pour fabriquer la cible � all �. Arr�t.
+
+ier n'a pas �t� mis � jour.
+
+tests: reset-test
+#  Cible factice (d�pendance de .PHONY).
+#  Recherche de r�gle implicite n'a pas �t� effectu�e.
+# Fichier inexistant.
+#  Fichier n'a pas �t� mis � jour.
+# makefile (de � makefile �, ligne 33)
+# APP_ENV = test
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=1/32=3%, Refait le hachage=0, Collisions=0/1=0%
+#  commandes � ex�cuter (de � makefile �, ligne 35):
+	symfony php bin/phpunit --testdox
+	
+
+start:
+#  Cible factice (d�pendance de .PHONY).
+#  Recherche de r�gle implicite n'a pas �t� effectu�e.
+# Fichier inexistant.
+#  Fichier n'a pas �t� mis � jour.
+# makefile (de � makefile �, ligne 16)
+# APP_ENV = dev
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=1/32=3%, Refait le hachage=0, Collisions=0/1=0%
+#  commandes � ex�cuter (de � makefile �, ligne 18):
+	docker-compose up -d
+	symfony serve -d
+	
+
+# Pas une cible :
+makefile:
+#  Recherche de r�gle implicite effectu�e.
+#  Derni�re modification 2022-05-13 15:23:55
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
+
+# Pas une cible :
+.SUFFIXES:
+#  Recherche de r�gle implicite n'a pas �t� effectu�e.
+#  Heure de modification jamais v�rifi�e.
+#  Fichier n'a pas �t� mis � jour.
+
+reset-test:
+#  Cible factice (d�pendance de .PHONY).
+#  Recherche de r�gle implicite n'a pas �t� effectu�e.
+# Fichier inexistant.
+#  Fichier n'a pas �t� mis � jour.
+# makefile (de � makefile �, ligne 50)
+# APP_ENV = test
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=1/32=3%, Refait le hachage=0, Collisions=0/1=0%
+#  commandes � ex�cuter (de � makefile �, ligne 52):
+	symfony console d:d:d --force
+	symfony console d:d:c
+	symfony console d:m:m --no-interaction
+	symfony console d:f:l --no-interaction
+	
+
+reset:
+#  Cible factice (d�pendance de .PHONY).
+#  Recherche de r�gle implicite n'a pas �t� effectu�e.
+# Fichier inexistant.
+#  Fichier n'a pas �t� mis � jour.
+# makefile (de � makefile �, ligne 43)
+# APP_ENV = dev
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=1/32=3%, Refait le hachage=0, Collisions=0/1=0%
+#  commandes � ex�cuter (de � makefile �, ligne 45):
+	symfony console d:d:d --force
+	symfony console d:d:c
+	symfony console d:m:m --no-interaction
+	
+
+fixtures:
+#  Cible factice (d�pendance de .PHONY).
+#  Recherche de r�gle implicite n'a pas �t� effectu�e.
+# Fichier inexistant.
+#  Fichier n'a pas �t� mis � jour.
+# makefile (de � makefile �, ligne 22)
+# APP_ENV = dev
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=1/32=3%, Refait le hachage=0, Collisions=0/1=0%
+#  commandes � ex�cuter (de � makefile �, ligne 24):
+	symfony console d:f: --no-interaction
+	
+
+coverage: reset-test
+#  Cible factice (d�pendance de .PHONY).
+#  Recherche de r�gle implicite n'a pas �t� effectu�e.
+# Fichier inexistant.
+#  Fichier n'a pas �t� mis � jour.
+# makefile (de � makefile �, ligne 38)
+# APP_ENV = test
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=1/32=3%, Refait le hachage=0, Collisions=0/1=0%
+#  commandes � ex�cuter (de � makefile �, ligne 40):
+	XDEBUG_MODE=coverage symfony php bin/phpunit --coverage-html var/coverage/test-coverage
+	
+
+install:
+#  Cible factice (d�pendance de .PHONY).
+#  Recherche de r�gle implicite n'a pas �t� effectu�e.
+# Fichier inexistant.
+#  Fichier n'a pas �t� mis � jour.
+# makefile (de � makefile �, ligne 3)
+# APP_ENV = dev
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=1/32=3%, Refait le hachage=0, Collisions=0/1=0%
+#  commandes � ex�cuter (de � makefile �, ligne 5):
+	docker-compose up -d
+	composer install
+	#composer install --ignore-platform-reqs
+	symfony serve -d
+	#php -S 127.0.0.1:8000 -t public/
+	npm install
+	npm run build
+	symfony console d:d:c
+	symfony console d:m:m --no-interaction
+	
+
+# statistiques des fichiers de la table de hachage:
+# Charge=14/1024=1%, Refait le hachage=0, Collisions=0/60=0%
+# Chemins de Recherche VPATH
+
+# Pas de chemins de recherche � vpath �.
+
+# Pas de chemin de recherche g�n�ral (variable � VPATH �).
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Fin de la base de donn�es de Make le Fri May 13 15:33:48 2022
+
+ 

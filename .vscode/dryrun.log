@@ -1,0 +1,14 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make.exe: entrant dans le r�pertoire � c:/Users/AY023176/dev/Cronify �
+docker-compose up -d
+composer install
+#composer install --ignore-platform-reqs
+symfony serve -d
+#php -S 127.0.0.1:8000 -t public/
+npm install
+npm run build
+symfony console d:d:c
+symfony console d:m:m --no-interaction
+ 
+make.exe: quittant le r�pertoire � c:/Users/AY023176/dev/Cronify �
+ 
