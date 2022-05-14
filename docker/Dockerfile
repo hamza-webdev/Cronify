@@ -6,7 +6,7 @@ RUN chmod +x /usr/local/bin/install-php-extensions && \
     install-php-extensions pdo_pgsql intl
 
 RUN curl -sSk https://getcomposer.org/installer | php -- --disable-tls && \
-   mv composer.phar /usr/local/bin/composer
+    mv composer.phar /usr/local/bin/composer
 
 RUN apt update && apt install -yqq nodejs npm
 
@@ -18,9 +18,9 @@ RUN cd /var/www && \
     composer install && \
     npm install --force && \
     npm run build
-    
+
 WORKDIR /var/www/
 
-ENTRYPOINT ["bash", "./docker/docker.sh"]
-
+#ENTRYPOINT ["bash", "./docker/docker.sh"]
+CMD php -S 127.0.0.1:80 public/index.php
 EXPOSE 80

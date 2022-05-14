@@ -15,6 +15,24 @@ services:
       # - ./docker/db/data:/var/lib/postgresql/data:rw
 ###< doctrine/doctrine-bundle ###
 
+  app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    #depends_on:
+     # - database
+    image: hamzabedwi/cronify:latest
+    ports:
+      - "8080:80"
+    environment:
+      DATABASE_URL: postgres://${POSTGRES_USER:-symfony}:${POSTGRES_PASSWORD:-ChangeMe}@database:5432/${POSTGRES_DB:-app}
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+    - 18080:8080
+
 volumes:
 ###> doctrine/doctrine-bundle ###
   db-data:

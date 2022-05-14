@@ -67,7 +67,7 @@ This documentation offers a simplified installation FOR DEVELOPMENT ONLY with Do
 ### 3.2. <a name='Cloneandinstall'></a>Clone and install
 
 ```bash
-git clone https://github.com/yoanbernabeu/Cronify.git
+git clone https://github.com/hamza-webdev/Cronify.git
 cd Cronify
 make install
 ```
@@ -117,6 +117,12 @@ Only THREE steps to get your cron job monitoring addresses !
 
 We offer you a quick method to test the application with the use of a preconfigured Docker container.
 
+## 5.0 donner un nom au container
+
+```
+docker build . -f ./docker/Dockerfile -t demo-cronify
+```
+
 ### 5.1. <a name='Createadocker-compose.yml'></a> Create a docker-compose.yml
 
 ```yaml
@@ -133,7 +139,7 @@ services:
       - db-data:/var/lib/postgresql/data:rw
 
   app:
-    image: yoanbernabeu/cronify:latest
+    image: hamzabedwi/cronify:latest
     ports:
       - "8080:80"
     environment:
@@ -169,3 +175,13 @@ make docker-build-and-push
 ## 7. <a name='License'></a>License
 
 See the bundled [LICENSE](LICENCE) file.
+
+## 8 Resoudre quelques erreur rencontrer:
+
+- erreur: Unable to create the storage directory (/var/www/var/cache/dev/profiler)
+
+solution: se connecte au contaier app ensuite tapez cette cmde
+
+```
+chown -R www-data:www-data var
+```
